@@ -1,0 +1,81 @@
+##########
+# collectionbuilder-sa
+# Jekyll Digital Collection Generator
+# https://github.com/CollectionBuilder/collectionbuilder-sa
+##########
+
+##########
+# URL VARIABLES
+#
+# site domain, full URL to the production location of your collection
+url: felicepstamaria.net
+# path to location on the domain if necessary e.g. /digital/hjccc
+baseurl: 
+# location of code, the full url to your github repository
+source-code: https://github.com/CollectionBuilder/collectionbuilder-sa
+
+##########
+# SITE SETTINGS
+#
+# title of site appears in banner
+title: Philippine Food History
+# tagline, a short phrase that will appear throughout the site in the top banner
+tagline: Narratives of a Distinct Southeast Asian Cuisine
+# description appears in meta tags and other locations
+# this description might appear in search result lists, keep around 160 characters max
+description: "Philippine food and beverage have a fascinating and ongoing story reaching into prehistory.  These exhibits celebrate how Filipinos have been creatively selecting preferred ingredients, technologies, procedures, and flavors amidst transitioning social, religious, political, economic, and scientific conditions. They are a testament to the value of heritage side by side with an appreciation for the contemporary."
+# keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
+keywords: philippine food history
+# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
+author: Felice P. Sta. Maria
+# Organization branding
+organization-name: Felice P. Sta. Maria
+organization-link: https://www.instagram.com/felicepstamaria/
+organization-logo-banner: /assets/img/fpstamarialogo.png
+organization-logo-nav:  /assets/img/fpstamarialogo.png
+
+##########
+# COLLECTION SETTINGS
+#
+# provide location of the digital objects folder,
+# If using local folder, dir name with proceeding slash. If using external web location, provide full URL
+objects: 
+# choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
+metadata: food-metadata
+# page generation settings [optional!]
+# [optional: only used if you need to tweak CB defaults or generate from more than one data file]
+# page_gen:
+#   - data: 'demo-metadata'
+#     template: 'item'
+#     name: 'objectid'
+#     dir: 'items'
+#     extension: 'html' 
+#     filter: 'objectid'  
+
+
+##########
+# GOOGLE SERVICES [optional!]
+#
+# leave these blank or comment out to NOT include google code
+# if present, used to add analytics during "production" build only
+# google-analytics-id: "UA-74844011-1"
+# google-cse-id: "002151703305773322890:1pu3smhw1t8"
+
+##########
+# ROBOTS EXCLUDE
+#
+# set noindex to true if you do NOT want Google to index your site
+# noindex: true 
+
+##########
+# BUILD SETTINGS 
+#
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+# (this is done automatically by gh-pages build)
+#
+# ignore stuff
+exclude: [docs/, Rakefile, README.md, LICENSE]
+# compress CSS output
+sass:
+  style: compressed
